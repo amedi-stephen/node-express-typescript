@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/amedi-stephen/node-express-typescript/issues"
   },
-  "homepage": "https://github.com/amedi-stephen/node-express-typescript#readme"
+  "homepage": "https://github.com/amedi-stephen/node-express-typescript#readme",
+  "dependencies": {
+    "typescript": "^4.3.2"
+  }
 }
