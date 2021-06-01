@@ -1,0 +1,19 @@
+{
+  "name": "express-typescript",
+  "version": "1.0.0",
+  "description": "Node.js set up in Express and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amedi-stephen/node-express-typescript.git"
+  },
+  "author": "Steve Amedi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amedi-stephen/node-express-typescript/issues"
+  },
+  "homepage": "https://github.com/amedi-stephen/node-express-typescript#readme"
+}
