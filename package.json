@@ -2,8 +2,13 @@
   "name": "express-typescript",
   "version": "1.0.0",
   "description": "Node.js set up in Express and TypeScript",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "rimraf dist && tsc",
+    "preserve": "npm run build",
+    "serve": "cross-env NODE_ENV=development concurrently \"tsc --watch\" \"nodemon -q dist/index.js\"",
+    "prestart": "npm run build",
+    "start": "cross-env NODE_ENV=production node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,11 +22,17 @@
   },
   "homepage": "https://github.com/amedi-stephen/node-express-typescript#readme",
   "dependencies": {
+    "@types/express": "^4.17.12",
+    "@types/node": "^15.6.1",
     "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "helmet": "^4.6.0",
     "rimraf": "^3.0.2",
     "typescript": "^4.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.7"
   }
 }
